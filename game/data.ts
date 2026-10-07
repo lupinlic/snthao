@@ -6,10 +6,10 @@ export const birthdayConfig = {
     "Và mong bạn có thật nhiều khoảnh khắc đáng nhớ.",
   ],
   gifts: [
-    { id: "cake", emoji: "🎂", title: "Bánh sinh nhật", description: "Một chiếc bánh ngọt dành riêng cho bạn.", color: "#e98a91" },
-    { id: "flowers", emoji: "💐", title: "Bó hoa tươi", description: "Một bó hoa rực rỡ dành tặng bạn.", color: "#74a88a" },
-    { id: "outing", emoji: "🎟️", title: "Buổi hẹn vui", description: "Một buổi đi chơi thật đáng nhớ.", color: "#7397bf" },
-    { id: "surprise", emoji: "🎁", title: "Quà bí mật", description: "Một điều bất ngờ đang chờ bạn.", color: "#d59a57" },
+    { id: "cake", emoji: "🎂", title: "Chúc mừng sinh nhật!", description: "Chúc bạn tuổi mới luôn vui vẻ và ngập tràn tiếng cười.", color: "#e98a91" },
+    { id: "flowers", emoji: "💐", title: "Luôn rạng rỡ nhé!", description: "Mong mỗi ngày của bạn đều tươi đẹp như những đóa hoa.", color: "#74a88a" },
+    { id: "outing", emoji: "🎟️", title: "Tuổi mới rực rỡ!", description: "Chúc bạn có thêm thật nhiều trải nghiệm vui và đáng nhớ.", color: "#7397bf" },
+    { id: "surprise", emoji: "🎁", title: "Vạn điều như ý!", description: "Chúc mọi ước mơ của bạn sớm trở thành hiện thực.", color: "#d59a57" },
   ],
   finalGift: {
     emoji: "🎁",

@@ -4,15 +4,15 @@ import { useState } from "react";
 import playTone from "../playTone";
 
 const rounds = [
-  { image: "/memory/cau1.png", alt: "NGÀY SINH", clue: "Một ngày trong năm nhưng lại là ngày đánh dấu khoảnh khắc một người xuất hiện trên thế giới.", word: "NGAYSINH", decoys: ["Y", "N", "S", "H", "I", "G","N","A"] },
-  { image: "/memory/cau2.png", alt: "TẶNG HOA", clue: "Một hành động thường xuất hiện trong những dịp đặc biệt, nhất là khi muốn gửi đến ai đó một chút yêu thương mà không cần nói quá nhiều.", word: "TANGHOA", decoys: ["T", "N", "H", "A","A", "G", "O"] },
-  { image: "/memory/cau3.png", alt: "THÊM MỘT TUỔI", clue: "Thời gian cứ lặng lẽ trôi, mỗi lần sinh nhật đến là chúng ta lại có thêm một điều để trưởng thành...", word: "THEMMOTTUOI", decoys: ["T", "H", "M", "E", "M", "U","O","T","O","T","I"] },
+  { image: "/memory/cau1.png", alt: "NGÀY SINH", clue: "Ngày một người chào đời.", word: "NGAYSINH" },
+  { image: "/memory/cau2.png", alt: "TẶNG HOA", clue: "Món quà thường dành tặng người thương.", word: "TANGHOA" },
+  { image: "/memory/cau3.png", alt: "THÊM MỘT TUỔI", clue: "Điều ta có sau mỗi lần sinh nhật.", word: "THEMMOTTUOI" },
 ] as const;
 
 const shuffle = (items: string[]) => [...items].sort(() => Math.random() - 0.5);
 const createLetterBank = (roundIndex: number) => {
   const round = rounds[roundIndex];
-  return shuffle([...round.word.split(""), ...round.decoys]);
+  return shuffle(round.word.split(""));
 };
 
 export default function LevelTwoScreen({ onComplete, onWrong }: { onComplete: () => void; onWrong: () => void }) {
